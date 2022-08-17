@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+
+}
+
+html,
+body {
+
+  font-family: "Source Sans Pro", 'sans-serif';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-color: #cccfd9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*logo*/
+
+.logo {
+  height: 5rem;
+  margin-top: 2rem;
+  padding-left: 0.1rem;
+}
+
+/*Header*/
+
+header {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 980px;
+  height: 70px;
+}
+
+/*Principal*/
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/*h1*/
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  max-width: 100%;
+  margin: 2rem;
+  color: #0A3871;
+  flex-grow: 1
+}
+
+/*Textarea*/
+
+.textarea {
+  display: flex;
+  flex-grow: 1;
+}
+
+textarea,
+textarea:hover,
+textarea:focus,
+input[type="button"],
+input[type="button"]:hover,
+input[type="button"]:focus {
+  background: inherit;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/*entrada*/
+
+#entrada {
+  text-align: center;
+  font-size: 2rem;
+  max-width: 100%;
+  margin: 7rem;
+  color: #02080f;
+  flex-grow: 1
+}
+
+/*Control*/
+
+.control {
+  padding: 1.5rem;
+}
+
+/*info*/
+
+.info {
+  height: 2rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*img-info*/
+
+.img-info {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  background-image: url('../icon/icon7.gif');
+  margin: 0px 0.5rem;
+}
+
+
+/*imput button*/
+
+input.button {
+  color: #0A3871;
+  border: solid 1px #0A3871;
+  border-radius: 1.5rem;
+  font-size: 18px;
+  height: 35px;
+  padding-right: 10px;
+  padding-left: 7px;
+  margin-bottom: 13px;
+  border-radius: 20px;   
+  cursor: pointer;
+
+  
+}
+
+input.button:hover,
+input.button:focus {
+  cursor: pointer;
+  background-color: #09305f;
+  color: rgb(230, 230, 230);
+  border: solid 1px #000;
+  transform: translateY(-2px);
+}
+
+/*Conteiner Lateral*/
+
+.conteiner-lateral {
+  background-color: rgb(245, 243, 243);
+  border: solid 1px rgb(222, 220, 220);
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 4rem;  
+  color: #4a5158;
+  
+}
+
+.conteiner-lateral {
+  position: relative;
+}
+
+/*info-lateral*/
+
+.info-lateral {
+  text-align: center;
+  
+}
+
+/*info-cod*/
+
+.info-cod {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*info-text*/
+
+.info-text {
+  text-align: center;
+}
+
+/*conteiner-lateral .button*/
+
+.conteiner-lateral .button {
+  position: absolute;
+  visibility: hidden;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+}
+
+.conteiner-lateral.com-saida .button {
+  visibility: visible;
+}
+
+.conteiner-lateral.com-saida .info-general {
+  display: none;
+}
+
+.conteiner-lateral.com-saida .img-banner {
+  display: none;
+}
+
+
+/*info-general*/
+
+.info-general strong {
+  color: #373e45;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+
+/*info-saida*/
+
+#info-saida {
+  font-size: 1.5rem;
+  max-width: 100%;
+  word-break: break-all;
+  overflow-y: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}

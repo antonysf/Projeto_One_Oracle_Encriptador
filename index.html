@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Encriptador de texto com Javascript One-Oracle">
+    <meta property="og:url" content="endereço do meu github onde esta o desafio">
+    <link rel="stylesheet" href="css/reset.css" type="text/css"> 
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="shortcut icon" type="imagem/x-icon" href="icon/icon3.gif">
+    <title>One-Oracle Decodificador </title>
+</head>
+
+<body class="d-md-flex flex-md-row">
+
+    <section class="principal d-flex flex-column">
+
+        <header>
+
+            <img class="logo" src="./icon/icon3.gif">            
+
+        </header>
+
+        <section class="d-flex flex-column flex-grow">
+
+            <div class="textarea">
+
+                <textarea id="entrada" placeholder="Digite seu texto ou palavra"></textarea>
+
+            </div>
+
+        </section>    
+
+            <section class="control">
+
+                <div class="info">
+
+                    <span class="info-text"></span><small>Digite apenas letras minúsculas e sem acentos</small>
+                    <img class="img-info" src="./icon/icon7.gif">
+
+                </div>
+
+                <div class="form-button d-flex flex-column flex-sm-row">
+
+                    <input type="button" class="button flex-sm-grow" value="Codificar" onclick="uiCodificar()">
+                    <input type="button" class="button flex-sm-grow" value="Decodificar" onclick="uiDecodificar()">
+
+                </div>
+
+            </section>        
+
+    </section>
+
+    <div class="conteiner-lateral d-flex flex-column">
+
+        <div class="info-lateral d-flex flex-column flex-grow">
+
+            <div class="img-banner d-none d-md-block">
+                <img src="img/banner.png">
+            </div>
+
+            <div class="info-general info-cod">
+
+                <strong>Nenhuma mensagem foi encontrada verifique novamente</strong><br><br>
+                <span>Digite um texto que você deseja codificar ou descodificar</span>
+                <br>
+
+                Antônio dos Santos Figueiredo
+                <a href="https://github.com/antonysf" target="_blank" rel="noopener noreferrer"><img class="icon" src="./icon/github.svg" width="24" height="24" alt="github"></a>
+                <a href="https://www.linkedin.com/in/antonio-figueiredo-dev/" target="_blank" rel="noopener noreferrer"><img class="icon" src="./icon/linkedin.svg" width="24" height="24" alt="linkedin"></a>
+
+            </div>
+
+        </div>
+
+        <div id="saida"></div>
+
+        <input type="button" class="button copiar" onclick="uiCopiar()" value="copiar">
+
+    </div>
+
+    <script src="./js/encriptador.js"></script>
+
+</body>
+
+</html>
